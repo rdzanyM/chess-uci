@@ -1,0 +1,13 @@
+repos:
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        entry: isort
+        language: system
+        files: \.py$
+      - id: black
+        name: black
+        entry: black --line-length 99
+        language: system
+        files: \.py$
